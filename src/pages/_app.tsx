@@ -1,6 +1,10 @@
-import '@/styles/globals.css'
+import { PageChrome } from '@/views/PageChrome'
 import type { AppProps } from 'next/app'
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <PageChrome>
+      <Component {...pageProps} />
+    </PageChrome>
+  )
 }
